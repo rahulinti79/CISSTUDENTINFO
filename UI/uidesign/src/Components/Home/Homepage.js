@@ -21,7 +21,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import LogoutIcon from '@mui/icons-material/Logout';
-import studentpic from '../../Images/myphoto'
+// import studentpic from '../../Images/myphoto'
 
 const drawerWidth = 240;
 
