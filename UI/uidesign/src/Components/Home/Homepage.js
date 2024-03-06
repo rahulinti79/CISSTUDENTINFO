@@ -109,7 +109,7 @@ const cardData = [
   },
 ];
 
-export default function MiniDrawer() {
+export default function Homepage() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 

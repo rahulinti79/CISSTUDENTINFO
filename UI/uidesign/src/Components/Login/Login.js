@@ -1,6 +1,7 @@
     import React, { useState } from 'react';
     import './Login.css';
-    import { useNavigate } from 'react-router-dom'; // Import useHistory hook
+    import { useNavigate,Link } from 'react-router-dom'; // Import useHistory hook
+
 
     export default function Login() {
     const [username, setUsername] = useState('');
@@ -19,6 +20,7 @@
     const handleSignIn = () => {
         // Logic for signing in with username and password
         console.log('Signing in with:', username, password);
+        
     };
 
     const handleSignUp = () => {
@@ -29,7 +31,7 @@
     };
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 login-style" >
         <h1>CIS Login</h1>
         <form>
             <table >
@@ -66,7 +68,7 @@
                 </tr>
                 <tr>
                 <td colSpan="2">
-                    <button className="btn btn-secondary btn-lg mr-2" onClick={handleSignIn}>Sign In</button>
+                    <button className="btn btn-secondary btn-lg mr-2" onClick={handleSignIn}><Link to="/home">Sign In</Link></button>
                     <button className="btn btn-secondary btn-lg" onClick={handleSignUp}>Sign Up</button>
                 </td>
                 </tr>
